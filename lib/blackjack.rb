@@ -25,7 +25,11 @@ end
 
 def initial_round
   sum=deal_card+deal_card
+<<<<<<< HEAD
   display_card_total(sum)
+=======
+  puts "Your cards add up to #{sum}"
+>>>>>>> 108c2ef169a61586a0fb41e65ead2b145d0812e9
   sum
 end
 
@@ -56,6 +60,7 @@ end
 
 def runner
   welcome 
+<<<<<<< HEAD
   
   total=initial_round
   while(total<22) do 
@@ -63,6 +68,14 @@ def runner
     total= hit?(total)
     display_card_total(total)
     
+=======
+  total=0 
+  while(total<22) do 
+    total=initial_round 
+    display_card_total(total)
+    hit?(total)
+    binding.pry
+>>>>>>> 108c2ef169a61586a0fb41e65ead2b145d0812e9
   end 
 end_game(total)
 end
